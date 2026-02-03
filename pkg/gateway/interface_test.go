@@ -12,7 +12,7 @@ func TestGatewayConfig(t *testing.T) {
 			Port string `mapstructure:"port"`
 			Host string `mapstructure:"host"`
 		}{
-			Port: "8080",
+			Port: "11435",
 			Host: "localhost",
 		},
 		Ollama: struct {
@@ -29,8 +29,8 @@ func TestGatewayConfig(t *testing.T) {
 
 	gwConfig := NewGatewayConfig(cfg)
 
-	if gwConfig.GetServerAddr() != "localhost:8080" {
-		t.Errorf("Expected server addr 'localhost:8080', got '%s'", gwConfig.GetServerAddr())
+	if gwConfig.GetServerAddr() != "localhost:11435" {
+		t.Errorf("Expected server addr 'localhost:11435', got '%s'", gwConfig.GetServerAddr())
 	}
 
 	if gwConfig.GetOllamaURL() != "http://localhost:11434" {

@@ -31,7 +31,7 @@ func Load() (*Config, error) {
 	viper.AutomaticEnv()
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 
-	viper.SetDefault("server.port", "11436")
+	viper.SetDefault("server.port", "11435")
 	viper.SetDefault("server.host", "0.0.0.0")
 	viper.SetDefault("ollama.url", "http://localhost:11434")
 	viper.SetDefault("logging.level", "info")

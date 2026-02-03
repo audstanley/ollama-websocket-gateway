@@ -26,7 +26,7 @@ func main() {
 	}
 
 	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.ollama-gateway/config.yaml)")
-	rootCmd.Flags().StringP("port", "p", "11436", "server port")
+	rootCmd.Flags().StringP("port", "p", "11435", "server port")
 	rootCmd.Flags().StringP("host", "H", "0.0.0.0", "server host")
 	rootCmd.Flags().String("ollama-url", "http://localhost:11434", "Ollama API URL")
 

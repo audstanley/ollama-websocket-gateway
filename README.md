@@ -27,7 +27,7 @@ go install github.com/audstanley/ollama-websocket-gateway/cmd/gateway@latest
 ollama-gateway
 
 # Run with custom port
-ollama-gateway --port 8080 --host localhost
+ollama-gateway --port 11435 --host localhost
 
 # Run with custom Ollama URL
 ollama-gateway --ollama-url http://localhost:11434
@@ -44,7 +44,7 @@ The gateway supports configuration via:
 ### Environment Variables
 
 ```bash
-GATEWAY_SERVER_PORT=8080
+GATEWAY_SERVER_PORT=11435
 GATEWAY_SERVER_HOST=localhost
 GATEWAY_OLLAMA_URL=http://localhost:11434
 GATEWAY_LOGGING_LEVEL=debug
@@ -56,7 +56,7 @@ Create `config.yaml`:
 
 ```yaml
 server:
-  port: "11436"
+  port: "11435"
   host: "0.0.0.0"
 ollama:
   url: "http://localhost:11434"
@@ -100,7 +100,7 @@ func main() {
 
 ## WebSocket API
 
-Connect to `ws://localhost:11436/ws` and send JSON:
+Connect to `ws://localhost:11435/ws` and send JSON:
 
 ```json
 {
